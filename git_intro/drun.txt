@@ -1,0 +1,76 @@
+
+6 7
+1 2 1
+1 3 2
+2 3 4
+2 4 6
+3 5 4
+4 6 2
+5 6 1
+
+
+dist = 6*[INT_MAX]
+pq = []
+dist[1] = 0 ---------------------------------
+pq = [0,1] - (vertex,distance)
+u = 1
+v = 2
+weigth = 1
+dist[2] = 1 -------------------------------------
+
+pq = [1,2]
+u = 1
+v = 3
+weigth = 2
+dist[3] = 2 -----------------------------------
+
+pq = [(1,2),(2,3)]
+u = 2
+pq = [2,3]
+v = 1
+weight = 1
+if not executed
+v = 3
+weigth = 4
+if not executed
+v = 4
+weigth = 6
+dist[4] = 7 --------------------------------------
+
+pq = [(2,3),(8,4)]
+u = 3
+pq = [8,4]
+v = 1
+wieght = 2
+if not executed
+v = 2
+weigth = 4
+if not executed
+v = 5
+weight = 4
+dist[5] = 6 ----------------------------------
+
+pq = [(8,4), (6,5)]
+u = 4
+pq = [6,5]
+v = 2
+weight = 6
+if not executed
+v = 6
+weight = 2
+dist[6] = 9
+
+pq = [6,5]
+u = 5
+pq = []
+v = 3
+weight = 4
+if not executed
+v = 6
+wight = 1
+dist[6] = 7 ---------------------------------------
+
+
+
+
+
